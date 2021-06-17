@@ -5,7 +5,7 @@ function shelfBook(book, shelf) {
 }
 
 function unshelfBook(title, shelf) {
-  shelf.forEach(function doAThing(book, index) {
+  shelf.forEach((book, index) => {
     if (book.title === title) {
       shelf.splice(index, 1);
     };
